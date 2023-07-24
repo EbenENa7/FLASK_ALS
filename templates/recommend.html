@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Movie Recommendations</title>
+</head>
+<body>
+    <h1>Movie Recommendations</h1>
+    <ul>
+        {% for movie in recommendations %}
+        <li>Movie ID: {{ movie.movieId }} - Rating: {{ movie.rating }}</li>
+        {% endfor %}
+    </ul>
+    <a href="/">Go back to Home</a>
+</body>
+</html>
